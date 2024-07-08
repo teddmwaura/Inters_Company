@@ -1,0 +1,667 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: poppins, sans-serif;
+}
+@media screen and (max-width: 600px) {
+  
+    /* section1 */
+
+    .menu{
+      top: 12%;
+    }
+    .menus{
+      right: 2%;
+      top: 1%;
+      display: initial;
+      z-index: -100px;
+    }
+     .iconing{
+       font-size: 40px;
+       cursor: pointer;
+       font-family: roboto;
+       color: rgb(40, 40, 114);
+     
+     }
+    
+    .company h1{
+      font-size: 50px;
+    }
+    .company h2{
+      font-size: 16px;
+    }
+    .around{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      row-gap: 1rem;
+    }
+    .company{
+      height: 85vh;
+      margin-bottom: 1rem;
+    }
+    .navbar nav{
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      width: 100%;
+      z-index: 200;
+    }
+    .div-right nav{
+      background: linear-gradient(135deg, rgb(40, 40, 114), rgb(167, 155, 155));
+      position: fixed;
+      top: -800px;
+      right: 0;
+      height: 90vh;
+      padding-top: 6rem;
+      border-radius: 10px;
+      transition: 1s ease;
+    }
+    .div-right ul{
+      display: flex;
+      flex-direction: column;
+    }
+    .div-right li{
+      margin-left: 1rem;
+      margin-bottom: 2rem;
+    }
+    .div-right a{
+      color: #fff;
+    }
+     /* section2 */
+  
+     .contain{
+      display: grid;
+      grid-template-columns: 1fr;
+      padding: 10px 0 1rem 0;
+    }
+    .containers{
+      height: 60vh;
+      width: 80%;
+      margin-top: 1rem;
+      margin-left: 1px;
+      display: flex;
+      align-self: center;
+      justify-self: center;
+    }
+  
+  
+    /* section3 */
+  
+    #section3{
+      padding: 1rem;
+      height: auto;
+    }
+    .arounds{
+      display: grid;
+      grid-template-columns: 1fr;
+      row-gap: 1.5rem;
+    }
+    .division5,
+    .division6,
+    .division7,
+    .division8{
+      width: 100%;
+      height: 60vh;
+      display: flex;
+      align-self: center;
+      justify-self: center;
+    }
+    /* section4 */
+  
+    #section4{
+      padding: 1rem;
+    }
+    .hero{
+      left: 4%;
+      width: 300px;
+  
+    }
+    .hero.active{
+      height: 450px;
+    }
+  /* section5 */
+  
+    #section5{
+      padding: 1rem 1rem 2rem 1rem;
+    
+    }
+    .website{
+     display: grid; 
+     grid-template-columns: 1fr;
+     row-gap: 1rem;
+     margin-top: 2rem;
+    }
+    .website-left h1{
+      margin-bottom: 1rem;
+      font-size: 30px;
+      text-align: center;
+    }
+    .website-left p{
+      font-size: 12px;
+    }
+  
+    .website-right{
+      height: 80vh;
+      opacity: 0.7;
+  
+    }
+  
+    /* section6 */
+  
+    #section6{
+      padding: 1rem;
+  }
+    .footer{
+      display: grid; 
+      grid-template-columns: 1fr;
+      margin-top: 2rem;
+      row-gap: 1rem;
+      text-align: center;
+    }
+    .align{
+      column-gap: 1rem;
+      row-gap: 1rem;
+    }
+    .follow{
+      justify-content: center;
+    }
+    .copyright{
+      text-align: center;
+    }
+    .align-self{
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* login form responsive design */
+      .div-left h2 {
+        font-size: 20px; /* Adjust font size for smaller screens */
+      }
+    
+      .button {
+        padding: 8px 20px; /* Adjust padding for smaller screens */
+        margin-right: 0.5rem;
+         /* Adjust margin for smaller screens */
+      }
+
+    
+      .hero {
+        width: 80%; /* Make the hero take full width on smaller screens */
+        height: auto; /* Adjust height for smaller screens */
+        top: 12%; /* Adjust positioning for smaller screens */
+        left: 5%; /* Center the hero on smaller screens */
+        border-radius: 10px; /* Adjust border radius for smaller screens */
+      }
+    
+      .hero .form-box,
+      .hero .form-boxer {
+        padding: 20px; /* Adjust padding for smaller screens */
+      }
+    
+      .hero .closed {
+        width: 35px; /* Adjust width for smaller screens */
+        height: 35px; /* Adjust height for smaller screens */
+        font-size: 18px; /* Adjust font size for smaller screens */
+      }
+    
+      .form-box h2,
+      .form-boxer h2 {
+        font-size: 18px; /* Adjust font size for smaller screens */
+      }
+    
+      .input {
+        margin: 20px 0; /* Adjust margin for smaller screens */
+      }
+    
+      .input input {
+        font-size: 14px; /* Adjust font size for smaller screens */
+        padding: 8px; /* Adjust padding for smaller screens */
+      }
+    
+      .input .icon {
+        font-size: 1rem; /* Adjust icon size for smaller screens */
+      }
+    
+      .forgot {
+        font-size: 0.8em; /* Adjust font size for smaller screens */
+      }
+    
+      .btn {
+        height: 40px; /* Adjust height for smaller screens */
+        font-size: 0.9em; /* Adjust font size for smaller screens */
+        width: 50%;
+       margin-left: 2rem;
+      }
+    
+      .register-link, .login-link {
+        font-size: 0.8em; /* Adjust font size for smaller screens */
+        margin: 20px 0 8px; /* Adjust margin for smaller screens */
+      }
+    
+    
+ 
+    /* marketing responsive design */
+  
+    
+  /* section 1 */
+  
+  .companys h1{
+    font-size: 50px;
+  }
+  
+  /* section 2 */
+  
+  .content h1{
+    font-size: 40px;
+  }
+  .content{
+    padding: 1rem;
+  }
+  .all{
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .all p{
+  font-size: 12px;
+  }
+  
+  /* section 3 */
+  
+  .objectives{
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 1rem;
+    padding: 10px;
+  }
+  .objectives-right h1{
+    font-size: 25px;
+    white-space: nowrap;
+  }
+  .objectives-left{
+    height: 70vh;
+    width: 100%;
+  }
+  .objectives-right p{
+    font-size: 12px;
+    letter-spacing: 1px;
+    margin-top: 1rem;
+  }
+  /*section 4 */
+  
+  .grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 1rem;
+    padding: 0.5rem;
+  }
+  .grid-left p{
+    font-size: 12px;
+  
+  }
+  .grid-left h2{
+    font-size: 20px
+  }
+  .marketing h1{
+    font-size: 25px;
+    letter-spacing: 1px;
+    font-family: roboto;
+    color: rgb(40, 40, 114);
+    margin-bottom: 2rem;
+    white-space: nowrap;
+  }
+  
+  
+  /* Construction page */
+  
+  /*section1 */
+  
+  
+  .allover a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 10px;
+  }
+  .construction-company{
+    padding-top: 100px;
+  }
+  .construction-company h1{
+    margin-bottom: 1rem;
+    font-size: 30px;
+  }
+  .construction-company h2{
+    font-size: 16px;
+    margin-bottom: 1rem;
+  }
+  
+  
+   /* section 2 */
+  
+       .toggle{
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+      }
+  
+      .servicing{
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 1rem;
+        padding: 1rem;
+      }
+      .servicing-left h1{
+        font-size: 20px;
+        margin-bottom: 1rem;
+      }
+      .servicing-left button{
+        text-align: center;
+      }
+  
+        /* Interior design styles */
+  
+    /* section 1 */
+  
+    .interior-company{
+      padding-top: 100px;
+    }
+    .interior-company h1{
+      font-size: 30px;
+      margin-bottom: 1rem;
+    }
+    .interior-company span{
+      font-size: 35px;
+  
+    }
+    .interior-company h2{
+      font-size: 14px;
+    }
+    .servicing-lefts button{
+      text-align: center;
+    }
+    .servicing-rights{
+      margin-left: 2rem;
+      margin-top: 2rem;
+      height: 50vh;
+    }
+    .servicing-lefts h1{
+      font-size: 20px;
+    }
+    .servicing-lefts span{
+      font-size: 18px;
+      margin-bottom: 1rem;
+    }
+    .servicing-lefts p{
+      font-size: 14px;
+   
+    }
+    .servicing-lefts h5{
+      font-size: 16px;
+    }
+  
+         /* Real Estate styles */
+  
+    /* section 1 */
+  
+    .estate-company{
+      padding-top: 100px;
+      width: 100%;
+    }
+    .estate-company h1{
+      font-size: 30px;
+      margin-bottom: 1rem;
+    }
+    .estate-company span{
+      font-size: 30px;
+  
+    }
+    .estate-company h2{
+      font-size: 11px;
+      line-height: 30px;
+    }
+    .servicing-righting{
+      height: 50vh;
+      margin-left: 2rem;
+      margin-top: 2rem;
+      
+    }
+  
+  .thumbnail{
+      gap: 5px;
+      width: 100%;
+      height: 40vh;
+      bottom: -40px;
+
+    }
+  .slider .list .item .content h2 {
+    font-size: 35px;
+    margin: 1rem 0;
+  }
+  .arrows { 
+    top: 20%;
+  }
+  .thumbnail .item {
+    width: 50px;
+    height: 150px;
+    margin-left: 10px;
+  }
+  .slider {
+    height: 90vh;
+    position: relative;
+  }
+  .button{
+    margin-left: 10px;
+     
+  }
+  .input input{
+    width: 100%;
+}
+.input{
+  width: 80%;
+ 
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1023px) {
+  /* section1*/
+
+  .company{
+    height: 70vh;
+  }
+  .div-right li{
+    margin-right: 1rem;
+    list-style: none;
+    position: relative;
+  }
+  .slider .list .item .content {
+     top: 5%;
+  
+  }
+  .company{
+    height: 95vh;
+    margin-bottom: 1rem;
+  }
+
+
+  /* section2 */
+
+  .contain{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px 0 1rem 0;
+  }
+  .containers{
+    height: 70vh;
+    width: 100%;
+  }
+
+   /* section3 */
+
+   #section3{
+    padding: 1rem;
+    height: auto;
+  }
+  .arounds{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 1rem;
+  }
+  .division5{
+    height: 35vh;
+  }
+  .division6{
+    height: 35vh;
+  }
+  .division7{
+    height: 35vh;
+  }
+  .division8{
+    height: 35vh;
+  }
+
+   /* section4 */
+
+   #section4{
+    padding: 0.5rem;
+  }
+  .testimonials{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 3rem;
+  }
+  .listing h2{
+    font-size: 10px;
+    line-height: 25px;
+  }
+  .thumbnail{
+    gap: 5px;
+    width: 100%;
+    height: 40vh;
+    bottom: -40px;
+
+  }
+   /* section5 */
+
+   #section5{
+    padding: 1rem 1rem 2rem 1rem;
+  
+  }
+  .website{
+   display: grid; 
+   grid-template-columns: 1fr 1fr;
+
+  }
+
+.website-left h1{
+  margin-bottom: 1rem;
+  font-size: 30px;
+  text-align: center;
+}
+.website-left p{
+  font-size: 12px;
+  line-height: 25px;
+}
+.website-right{
+  height: 80vh;
+  opacity: 0.7;
+
+}
+.footer{
+  display: grid; 
+  grid-template-columns: 1fr 1fr;
+}
+
+/* Marketing resposnsive design */
+
+  /* section 2 */
+
+  .all p{
+    font-size: 12px;
+    }
+
+    /* section 3 */
+
+    .objectives-right h1{
+      font-size: 25px;
+      white-space: nowrap;
+    }
+    .objectives-left{
+      height: 70vh;
+      width: 100%;
+    }
+    .objectives-right p{
+      font-size: 12px;
+      letter-spacing: 1px;
+      margin-top: 1rem;
+    }
+
+     /* section 3 */
+
+    .grid-left p{
+      font-size: 12px;
+    
+    }
+    .grid-left h2{
+      font-size: 20px
+    }
+    .marketing h1{
+      font-size: 25px;
+      letter-spacing: 1px;
+      font-family: roboto;
+      color: rgb(40, 40, 114);
+      margin-bottom: 2rem;
+      white-space: nowrap;
+    }
+}
+
+@media only screen and (min-width: 1024px)  and (max-width: 1200px){
+  /* section1 */
+
+  .company{
+    height: 60vh;
+  }
+
+  /* section2 */
+  .contain{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px 0 1rem 0;
+  }
+  .containers{
+    height: 50vh;
+    width: 100%;
+  }
+  /* section3 */
+
+  #section3{
+    padding: 1rem;
+    height: auto;
+  }
+  .arounds{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 1rem;
+  }
+  .division5{
+    height: 35vh;
+  }
+  .division6{
+    height: 35vh;
+  }
+  .division7{
+    height: 35vh;
+  }
+  .division8{
+    height: 35vh;
+  }
+  .website-left p{
+    font-size: 15px;
+    line-height: 25px;
+  }
+  .website-right{
+    height: 60vh;
+    opacity: 0.7;
+  
+  }
+}

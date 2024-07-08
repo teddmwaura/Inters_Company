@@ -1,0 +1,1831 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: poppins, sans-serif;
+}
+/* section1 styles */
+
+#section1{
+  height: auto;
+  padding-bottom: 1rem;
+
+}
+.div{
+  display: flex;
+  align-items: center;
+  height: 10vh;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  z-index: 100;
+  padding-bottom: 10px;
+}
+.div-left{
+  display: flex;
+  align-items: center;
+  padding: 10px 0 0 1rem;
+  cursor: pointer;
+
+  
+}
+.div-left h1{
+  font-family: 'kaushan Script', cursive;
+  letter-spacing: 1px;
+  font-size: 60px;
+  color: rgb(40, 40, 114);
+  margin-right: 1rem;
+ 
+}
+
+.div-left h2 {
+  font-size: 25px;
+  letter-spacing: 1px;
+  font-style: italic;
+  margin-top: 2rem;
+  opacity: 1;
+  animation: moveAndFade 5s infinite ease-in-out;
+}
+
+@keyframes moveAndFade {
+  0%, 100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  50% {
+    transform: translateX(-1rem);
+    opacity: 0;
+  }
+}
+
+.div-right ul{
+  display: flex;
+}
+.div-right li{
+  margin-right: 2rem;
+  list-style: none;
+  position: relative;
+}
+.div-right a{
+  text-decoration: none;
+  color: #333;
+}
+.div-right a::after{
+  content: '';
+  position: absolute;
+  height: 3px;
+  background-color: #aaa;
+  width: 100%;
+  bottom: -5px;
+  left: 2px;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform .5s;
+}
+.div-right a:hover::after{
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+/* menu button*/
+
+.menu{
+ padding-top: 1rem;
+ position: fixed;
+ left: 1%;
+ top: 12%;
+ padding: 5px;
+ border-top-left-radius: 20px;
+ border-bottom-right-radius: 20px;
+ box-shadow: 0 5px 10px #333;
+ z-index: 100;
+ background-color: rgb(40, 40, 114);
+  
+}
+.icon{
+  font-size: 40px;
+  cursor: pointer;
+  font-family: roboto;
+  color: #fff;
+
+}
+.menus{
+  padding-top: 1rem;
+  position: fixed;
+  right: 1%;
+  top: 12%;
+  padding: 5px;
+  display: none;
+}
+ .iconing{
+   font-size: 40px;
+   cursor: pointer;
+   font-family: roboto;
+   color: rgb(40, 40, 114);
+ 
+ }
+.navbar nav{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 50%;
+  padding: 1rem;
+  z-index: 100;
+  border-radius: 10px;
+  left: -1000px;
+  transition: 1.5s ease;
+  box-shadow: 0 10px 15px #ddd;
+}
+
+.navbar nav ul{
+  text-align: center;
+}
+.navbar nav ul li{
+  margin-bottom: 2rem;
+  list-style: none;
+}
+.navbar nav ul li a{
+  text-decoration: none;
+  color: black;
+  transition: 0.5s ease;
+
+}
+.navbar nav ul li a:hover{
+  text-decoration: underline;
+  color: rgb(40, 40, 114);
+}
+.issubscribe{
+  background-color: white;
+}
+
+
+.around{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 10px;
+  text-align: center;
+  margin-top: 2rem;
+  row-gap: 2rem;
+}
+.division{
+  color: #fff;
+  height: 25vh;
+  width: 100%;
+  background: linear-gradient(100deg, rgba(0,0,0,0.4), rgb(40, 40, 114) ), url(https://asmsheetmetal.com/wp-content/uploads/2023/03/VanSchendel-Construction.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  transition: 0.5s ease;
+}
+.division2{
+  color: #fff;
+  height: 25vh;
+  width: 100%;
+  background: linear-gradient(100deg, rgba(0,0,0,0.4), rgb(40, 40, 114)), url(https://emeritus.org/in/wp-content/uploads/sites/3/2022/11/IIMK-ASMP-1024x576.jpg.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  transition: 0.5s ease;
+}
+.division3{
+  color: #fff;
+  height: 25vh;
+  width: 100%;
+  background: linear-gradient(100deg, rgba(0,0,0,0.4), rgb(40, 40, 114)), url(https://asset.skoiy.com/9b80a6f781ff336f/yrwwqpnyb7ys.jpg?w=970&q=90);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  transition: 0.5s ease;
+}
+.division4{
+  color: #fff;
+  height: 25vh;
+  width: 100%;
+  background: linear-gradient(100deg, rgba(0,0,0,0.4), rgb(40, 40, 114)), url(https://assets.entrepreneur.com/content/3x2/2000/1691095535-entrepreneur-real-estate-wealth-0823-g912235266.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  transition: 0.5s ease;
+}
+.division:hover{
+  transform: translateY(-0.5rem);
+}
+.division2:hover{
+  transform: translateY(-0.5rem);
+}
+.division3:hover{
+  transform: translateY(-0.5rem);
+}
+.division4:hover{
+  transform: translateY(-0.5rem);
+}
+.close{
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  padding: 10px;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  box-shadow: 0 5px 10px gray;
+}
+
+.closes{
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  padding: 10px;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  box-shadow: 0 5px 10px #fff;
+}
+.closings{
+  box-shadow: 0 2px 5px #fff;
+}
+.icons{
+  font-size: 20px;
+  cursor: pointer;
+  color: gray;
+}
+.iconsy{
+  font-size: 20px;
+  cursor: pointer;
+  color: #fff;
+}
+.company{
+  margin-top: 4rem;
+  height: 95vh;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.slider {
+  height: 100vh;
+  position: relative;
+}
+
+.slider .list .item {
+  position: absolute;
+  inset: 0 0 0 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: .5s;
+
+}
+
+.slider .list .item img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.slider .list .item::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: linear-gradient(rgba(0,0,0,0.1), #333)
+}
+
+.slider .list .item .content {
+  position: absolute;
+  left: 10%;
+  top: 20%;
+  width: 500px;
+  z-index: 100;
+}
+.slider .list .item .content p:nth-child(1)
+{
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  color: white;
+  font-size: 18px;
+}
+.slider .list .item .content h2{
+  font-size: 80px;
+  margin: 0;
+  color: #eee;
+}
+
+.slider .list .item.active {
+  opacity: 1;
+  z-index: 10;
+}
+
+@keyframes showContent{
+  to{
+    transform: translateY(0);
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+.slider .list .item.active p:nth-child(1),
+.slider .list .item.active h2,
+.slider .list .item.active p:nth-child(3)
+{
+  transform: translateY(30px);
+  filter: blur(20px);
+  opacity: 0;
+  animation: showContent .5s .7s ease-in-out 1 forwards;
+}
+.slider .list .item.active h2{
+  animation-delay: 1s;
+}
+.slider .list .item.active p:nth-child(3)
+{
+  animation-duration: 1.3s;
+  color: #ddd;
+  font-size: 20px;
+}
+.arrows{ 
+  position: absolute;
+  top: 30%;
+  right: 50px;
+  z-index: 10;
+}
+.arrows button {
+  background-color: #eee5;
+  border: none;
+  font-family: 'Courier New', Courier, monospace;
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  font-size: x-large;
+  transition: background-color .5s ease, color .5s ease;
+  color: azure;
+}
+
+.arrows button:hover {
+  background-color: #eee;
+  color: #000;
+}
+
+.thumbnail {
+  position: absolute;
+  bottom: 10px;
+  z-index: 11;
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  height: 40vh;
+  padding: 10px 30px;
+  box-sizing: border-box;
+  overflow: auto;
+  justify-content: end;
+}
+.thumbnail::-webkit-scrollbar{
+  width: 0;
+}
+
+.thumbnail .item {
+  width: 150px;
+  height: 220px;
+  filter: brightness(.4);
+  transition: filter .5s;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  flex-shrink: 0;
+}
+
+.thumbnail .item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.thumbnail .item.active {
+  filter: brightness(1);
+}
+
+
+
+/* Login Button */
+
+.button{
+  padding: 10px 30px;
+  border: none;
+  background-color: rgb(43, 43, 180);
+  margin-right: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  color: white;
+  transition: 0.5s ease; 
+}
+.button:hover{
+  background-color: #efefef;
+  color: rgb(43, 43, 180);
+  border: 1px solid #efefef;
+  box-shadow: 0 5px 10px gray;
+}
+
+.hero{
+  position: relative;
+  position: fixed;
+  width: 400px;
+  height: 440px;
+  background: #ddd;
+  backdrop-filter: blur(20px);
+  border-radius: 20px; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transition: .7s;
+  transform:  scale(0);
+  top: 10%;
+  left: 10%;
+  z-index: 200;
+
+  
+}
+.hero.active{
+  height: 520px;
+}
+.hero.active-popup{
+  transform:  scale(1);
+}
+.hero.active-hide{
+  transform:  scale(0);
+}
+.hero .form-box{
+  width: 100%;
+  padding: 40px;
+ /* display: none; */
+ transition: transform .5s ease;
+ transform: translateX(0);
+}
+.hero.active .form-box{
+  transition: .5s;
+  transform: translateX(-400px);
+}
+.hero .form-boxer{
+  position: absolute;
+  transform: translateX(400px);
+  transition: .5s ease;
+
+}
+.hero.active .form-boxer{
+  transition: transform .5s ease;
+  transform: translateX(0);
+}
+.hero .closed{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 45px;
+  height: 45px;
+  background: #ddd;
+  font-size: 22px;
+  color: #606060;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.form-box h2{
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+}
+.input{
+position: relative;
+width: 100%;
+height: 50px;
+margin: 30px 0;
+}
+.input label{
+  color: #aaa;
+  letter-spacing: 1px;
+  font-size: 14px;
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  font-weight: 200;
+  pointer-events: none;
+  transition: .5s;
+}
+.input input{
+  outline: none;
+  width: 100%;
+  border: none;
+  margin-bottom: 1rem;
+  color: #fff;
+  font-size: 16px;
+  background:  #606060;
+  padding: 10px;
+ 
+  
+}
+.input input:focus~label,
+.input input:valid~label
+{
+  top: -10px
+}
+.input .icon{
+  position: absolute;
+  right: 8px;
+  font-size: 1.2rem;
+  color: #efefef;
+  line-height: 57px;
+
+}
+.forgot{
+  font-size: .9em;
+  margin: -1px 0 15px;
+  display: flex;
+  justify-content: space-between;
+}
+.forgot label input{
+  accent-color: #606060;
+  margin-right: 3px;
+}
+.forgot a{
+  color: #fff;
+  text-decoration: none;
+  letter-spacing: 1px;
+  transition: .5s;
+}
+.forgot a:hover{
+  text-decoration: underline;
+}
+.btn{
+  width: 100%;
+  height: 45px;
+  background: #606060;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 1em;
+  color: #fff;
+  border-radius: 2px;
+  transition: .5s;
+  margin-bottom: 1rem;
+}
+.btn:hover{
+  background: #333;
+  border: 1px solid #606060;
+}
+.register-link{
+  font-size: .9em;
+  color: #333;
+  text-align: center;
+  margin: 25px 0 10px;
+}
+.register-link p a{
+  color: #333;
+  text-decoration: none;
+}
+.register-link p a:hover{
+  text-decoration: underline;
+}
+.form-boxer h2{
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+}
+.login-link{
+  font-size: .9em;
+  color: black;
+  text-align: center;
+  margin: 25px 0 10px;
+}
+.login-link p a{
+  color: black;
+  text-decoration: none;
+}
+.login-link p a:hover{
+  text-decoration: underline;
+}
+
+/* section 2 styles */
+
+#section2{
+height: auto;
+padding: 1rem;
+background-color: #efefef;
+}
+.line{
+  text-align: center;
+  
+
+}
+.line p{
+  letter-spacing: 1px;
+  text-align: center;
+  color: rgb(40, 40, 114); 
+  margin-bottom: 1rem;
+  position: relative;
+ 
+  
+}
+.line h1{
+  font-size: 30px;
+
+
+}
+.line p::after{
+  content: '';
+  width: 35px;
+  height: 35px;
+  background: linear-gradient(rgb(40, 40, 114), white);
+  position: absolute;
+  top: -10px;
+  left: 35%;
+  z-index: 1;
+  transform: rotate(30deg);
+  border-top-left-radius: 35px;
+  border-bottom-right-radius: 30px ;
+}
+.contain{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 1rem;
+  padding: 3rem 2rem 2rem 3rem;
+}
+.linesman{
+  margin-bottom: 2rem;
+}
+.linesman h1{
+  color: rgb(40, 40, 114);
+  margin-bottom: 1rem;
+  font-size: 20px;
+  text-align: center;
+}
+.linesman p{
+  margin-bottom: 1rem;
+}
+.container{
+  padding-top: 3rem;
+}
+.container p{
+  line-height: 25px;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+.containers{
+  color: #fff;
+  height: 75vh;
+  width: 80%;
+  background: linear-gradient(100deg, rgba(0,0,0,0.4), rgb(40, 40, 114)), url(https://asset.skoiy.com/9b80a6f781ff336f/yrwwqpnyb7ys.jpg?w=970&q=90);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 10rem;
+  margin-left: 2rem;
+  font-size: 20px;
+  transition: 0.5s ease;
+}
+
+/* section 3 styles */
+
+#section3{
+  padding: 3rem;
+  height: auto;
+}
+.arounds{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 10px;
+  text-align: center;
+  margin-top: 2rem;
+  row-gap: 2rem;
+}
+.division5{
+  color: #fff;
+  height: 50vh;
+  width: 100%;
+  background: url(https://www.home-designing.com/wp-content/uploads/2015/03/large-home-exterior.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  transition: 0.5s ease;
+  position: relative;
+}
+.division6{
+  color: #fff;
+  height: 50vh;
+  width: 100%;
+  background: url(https://res.cloudinary.com/simpleview/image/upload/v1661307407/clients/wausauwi/Shopping_Retail_00558fdc-d9ee-4bd4-979e-b6d450439b34.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  transition: 0.5s ease;
+  position: relative;
+}
+.division7{
+  color: #fff;
+  height: 50vh;
+  width: 100%;
+  background:  url(https://asset.skoiy.com/9b80a6f781ff336f/yrwwqpnyb7ys.jpg?w=970&q=90);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  transition: 0.5s ease;
+  position: relative;
+}
+.division8{
+  color: #fff;
+  height: 50vh;
+  width: 100%;
+  background:  url(https://assets.entrepreneur.com/content/3x2/2000/1691095535-entrepreneur-real-estate-wealth-0823-g912235266.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  transition: 0.5s ease;
+  position: relative;
+}
+.lay{
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  border-radius:7px;
+  cursor: pointer;
+  background: linear-gradient(rgba(0,0,0,0.5),   rgb(40, 40, 114));
+  opacity: 0;
+  transition: 1s;
+}
+
+.vidi{
+  width: 80%;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+  opacity: 0;
+  transition: 1s;
+} 
+hr{
+  color: #fff;
+  margin: 15px auto;
+  height: 2px;
+  width: 60%;
+}
+.vidi p{
+  font-size: 14px;
+}
+.division5 .vidi,
+.division6 .vidi,
+.division7 .vidi,
+.division8 .vidi {
+  bottom: 0;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.division5 .lay,
+.division6 .lay,
+.division7 .lay,
+.division8 .lay {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.show .vidi {
+  bottom: 40%;
+  opacity: 1;
+}
+
+.show .lay {
+  opacity: 1;
+}
+
+
+/* section 4 styles */
+
+#section4{
+  padding: 3rem;
+  height: auto;
+  background-color: #efefef;
+}
+.card a{
+  text-decoration: none;
+  font-size: 16px;
+  color:rgb(43, 43, 180);
+  font-style: italic;
+}
+
+
+/* section 5 styles */
+
+#section5{
+  padding: 3rem;
+
+}
+.website-left{
+ text-align: center;
+ margin-top: 3rem;
+}
+.website-left h1{
+  letter-spacing: 1px;
+  color: #aaa;
+  margin-bottom: 2rem;
+  font-size: 35px;
+}
+.website-left p{
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-style: italic;
+  margin-bottom: 10px;
+  color: #333;
+  line-height: 30px;
+}
+
+.website-left h2{
+  font-size: 18px;
+  letter-spacing: 1px;
+
+  font-style: italic;
+  margin-bottom: 2rem;
+  color: rgb(40, 40, 114);
+  text-align: center;
+}
+.align{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 2rem;
+  row-gap: 1rem;
+}
+.align span{
+  font-size: 25px;
+  text-align: center;
+}
+
+
+/* section 6 styles */
+
+#section6{
+  padding: 3rem;
+  background-color: rgb(40, 40, 114);
+  height: auto;
+}
+.footer{
+  display: grid; 
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 1rem;
+  margin-top: 3rem;
+}
+.social-links h1{
+  letter-spacing: 1px;
+  color: #aaa;
+  margin-bottom: 2rem;
+  font-size: 25px;
+}
+.social-links p{
+  margin-bottom: 20px;
+}
+.social-links a{
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-style: italic;
+  margin-bottom: 1rem;
+  text-decoration: none;
+  color: #fff;
+  transition: 0.5s ease;
+}
+.social-links a:hover{
+  text-decoration: underline;
+}
+.copyright{
+  color: #ddd;
+  letter-spacing: 1px;
+  margin-top: 1rem;
+}
+.follow{
+  display: flex;
+  margin-top: 2rem;
+}
+.line h3{
+  color: white;
+  margin-bottom: 20px;
+}
+.follow-us{
+  background-color: #000000;
+  height: 50px;
+  width: 50px;
+  border-radius: 25px;
+  margin-right: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s ease;
+  text-align: center;
+}
+.follow-us:hover{
+  background-color: #fff;
+}
+
+.follow-us .icon{
+  color: #fff;
+  font-size: 30px;
+  transition: 0.5s ease;
+}
+.follow-us a{
+  transform: translateY(30%);
+}
+.follow-us .icon:hover{
+  color: black;
+}
+.follow-us img{
+  height: 30px;
+  filter: brightness(0) invert(1);
+  transition: .5s ease;
+}
+.follow-us img:hover{
+  filter: brightness(1) invert(0);
+}
+
+.have{
+  color: #ddd;
+  letter-spacing: 1px;
+}
+.location{
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+}
+.location img{
+  filter: brightness(0) invert(1);
+  height: 25px;
+  margin-right: 10px;
+}
+.align-self{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 10px 20px;
+}
+.align-self p{
+  color: #ddd;
+  letter-spacing: 1px;
+  white-space: no-wrap;
+}
+
+
+/* Construction page */
+
+
+
+
+
+     /* section 3 */
+
+
+.servicing{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 1rem;
+  padding: 2rem 1rem 1rem 1rem;
+}
+.servicing-left h1{
+  font-size: 30px;
+  letter-spacing: 1px;
+  color: rgb(40, 40, 114);
+  margin-bottom: 2rem;
+  letter-spacing: 1px;
+}
+.servicing-left p{
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+  font-size: 14px;
+}
+.servicing-left button{
+  padding: 10px 30px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 1rem;
+  color: white;
+  background-color: rgb(40, 40, 114);
+  transition: 0.5s ease;
+}
+.servicing-left button:hover{
+  background-color: white;
+  color:rgb(40, 40, 114);
+  box-shadow: 0 5px 10px #333;
+}
+.servicing-right{
+  color: #fff;
+  height: 75vh;
+  width: 70%;
+  background: linear-gradient(100deg, rgba(0,0,0,0.4), rgb(40, 40, 114)), url(https://www.home-designing.com/wp-content/uploads/2015/03/large-home-exterior.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+  margin-left: 3rem;
+  border-radius: 30px;
+  
+}
+
+
+  /* Interior design styles */
+
+  /* section 2 */
+
+  .gallaries{
+    width: 900px;
+    display: flex;
+    overflow-x: scroll;
+  }
+  .divine{
+    width: 50%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    padding: 10px;
+    flex: none;
+    
+  }
+  .divine img{
+    filter: grayscale(90%);
+    transition: transform 1s;
+    border-radius: 20px;
+    max-width: 100%;
+    height: 60vh;
+
+  }
+  .gallaries::-webkit-scrollbar{
+    display: none;
+  }
+  .image{
+    height: 25px;
+  
+    cursor: pointer;
+  }
+  .heroin{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10% auto;
+  }
+  .divine img:hover{
+    filter: grayscale(0);
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+  @media  screen and (max-width: 600px) {
+    .gallaries{
+      width: 600px;
+      height: 45vh;
+      background-color: #fff;
+      border-radius: 10px;
+    }
+    .divine{
+      width: 100%;
+      display: grid;
+      grid-template-rows: auto;
+    }
+    .divine img{
+      width: 90%;
+    }
+    .servicing-right{
+      margin-left: 1rem;
+      width: 90%;
+      height: 50vh;
+    }
+  }
+  /* section 3 */
+
+  .servicing-lefts h1{
+    font-size: 30px;
+    letter-spacing: 1px;
+    color: gray;
+    margin-bottom: 2rem;
+    letter-spacing: 1px;
+  }
+  .servicing-lefts span{
+    font-size: 25px;
+    letter-spacing: 1px;
+    color: rgb(40, 40, 114);
+    margin-bottom: 2rem;
+    letter-spacing: 1px;
+    margin-right: 10px;
+  }
+  .servicing-lefts p{
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+    font-size: 16px;
+    line-height: 25px;
+  }
+  .servicing-lefts h5{
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: rgb(40, 40, 114);
+    margin-top: 2rem;
+    letter-spacing: 1px;
+    margin-right: 10px;
+    font-style: italic;
+  }
+  .servicing-lefts button{
+    padding: 10px 30px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 1rem;
+    color: white;
+    background-color: rgb(40, 40, 114);
+    transition: 0.5s ease;
+  }
+  .servicing-lefts button:hover{
+    background-color: white;
+    color:rgb(40, 40, 114);
+    box-shadow: 0 5px 10px #333;
+  }
+  .servicing-rights{
+    color: #fff;
+    height: 80vh;
+    width: 70%;
+    background: linear-gradient(100deg, rgba(0,0,0,0.4), rgb(40, 40, 114)), url("https://www.decorpot.com/images/blogimage2113581868modern-interior-design.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    margin-left: 2rem;
+    margin-top: 10rem;
+    border-radius: 30px;
+    
+  }
+
+  /* Real Estate Styles */
+
+    /* section 3 */
+
+    .servicing-righting{
+      color: #fff;
+      height: 80vh;
+      width: 70%;
+      background: linear-gradient(100deg, rgba(0,0,0,0.4), rgb(40, 40, 114)), url(https://assets.entrepreneur.com/content/3x2/2000/1691095535-entrepreneur-real-estate-wealth-0823-g912235266.jpg );
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      cursor: pointer;
+      margin-left: 2rem;
+      border-radius: 30px;
+      margin-top: 5rem;
+      
+    }
+   
+  
+
+/*responsive screen devices*/
+
+/* small screen devices*/
+
+
+
+@media screen and (max-width: 600px) {
+  
+    /* section1 */
+
+    .menu{
+      top: 12%;
+    }
+    .menus{
+      right: 2%;
+      top: 1%;
+      display: initial;
+      z-index: -100px;
+    }
+     .iconing{
+       font-size: 40px;
+       cursor: pointer;
+       font-family: roboto;
+       color: rgb(40, 40, 114);
+     
+     }
+    
+    .company h1{
+      font-size: 50px;
+    }
+    .company h2{
+      font-size: 16px;
+    }
+    .around{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      row-gap: 1rem;
+    }
+    .company{
+      height: 85vh;
+      margin-bottom: 1rem;
+    }
+    .navbar nav{
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      width: 100%;
+      z-index: 200;
+    }
+    .div-right nav{
+      background: linear-gradient(135deg, rgb(40, 40, 114), rgb(167, 155, 155));
+      position: fixed;
+      top: -800px;
+      right: 0;
+      height: 90vh;
+      padding-top: 6rem;
+      border-radius: 10px;
+      transition: 1s ease;
+    }
+    .div-right ul{
+      display: flex;
+      flex-direction: column;
+    }
+    .div-right li{
+      margin-left: 1rem;
+      margin-bottom: 2rem;
+    }
+    .div-right a{
+      color: #fff;
+    }
+     /* section2 */
+  
+     .contain{
+      display: grid;
+      grid-template-columns: 1fr;
+      padding: 10px 0 1rem 0;
+    }
+    .containers{
+      height: 60vh;
+      width: 80%;
+      margin-top: 1rem;
+      margin-left: 1px;
+      display: flex;
+      align-self: center;
+      justify-self: center;
+    }
+  
+  
+    /* section3 */
+  
+    #section3{
+      padding: 1rem;
+      height: auto;
+    }
+    .arounds{
+      display: grid;
+      grid-template-columns: 1fr;
+      row-gap: 1.5rem;
+    }
+    .division5,
+    .division6,
+    .division7,
+    .division8{
+      width: 100%;
+      height: 60vh;
+      display: flex;
+      align-self: center;
+      justify-self: center;
+    }
+    /* section4 */
+  
+    #section4{
+      padding: 1rem;
+    }
+    .hero{
+      left: 4%;
+      width: 300px;
+  
+    }
+    .hero.active{
+      height: 450px;
+    }
+  /* section5 */
+  
+    #section5{
+      padding: 1rem 1rem 2rem 1rem;
+    
+    }
+    .website{
+     display: grid; 
+     grid-template-columns: 1fr;
+     row-gap: 1rem;
+     margin-top: 2rem;
+    }
+    .website-left h1{
+      margin-bottom: 1rem;
+      font-size: 30px;
+      text-align: center;
+    }
+    .website-left p{
+      font-size: 12px;
+    }
+  
+    .website-right{
+      height: 80vh;
+      opacity: 0.7;
+  
+    }
+  
+    /* section6 */
+  
+    #section6{
+      padding: 1rem;
+  }
+    .footer{
+      display: grid; 
+      grid-template-columns: 1fr;
+      margin-top: 2rem;
+      row-gap: 1rem;
+      text-align: center;
+    }
+    .align{
+      column-gap: 1rem;
+      row-gap: 1rem;
+    }
+    .follow{
+      justify-content: center;
+    }
+    .copyright{
+      text-align: center;
+    }
+    .align-self{
+      display: flex;
+      flex-direction: column;
+    }
+ 
+    /* marketing responsive design */
+  
+    
+  /* section 1 */
+  
+  .companys h1{
+    font-size: 50px;
+  }
+  
+  /* section 2 */
+  
+  .content h1{
+    font-size: 40px;
+  }
+  .content{
+    padding: 1rem;
+  }
+  .all{
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .all p{
+  font-size: 12px;
+  }
+  
+  /* section 3 */
+  
+  .objectives{
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 1rem;
+    padding: 10px;
+  }
+  .objectives-right h1{
+    font-size: 25px;
+    white-space: nowrap;
+  }
+  .objectives-left{
+    height: 70vh;
+    width: 100%;
+  }
+  .objectives-right p{
+    font-size: 12px;
+    letter-spacing: 1px;
+    margin-top: 1rem;
+  }
+  /*section 4 */
+  
+  .grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 1rem;
+    padding: 0.5rem;
+  }
+  .grid-left p{
+    font-size: 12px;
+  
+  }
+  .grid-left h2{
+    font-size: 20px
+  }
+  .marketing h1{
+    font-size: 25px;
+    letter-spacing: 1px;
+    font-family: roboto;
+    color: rgb(40, 40, 114);
+    margin-bottom: 2rem;
+    white-space: nowrap;
+  }
+  
+  
+  /* Construction page */
+  
+  /*section1 */
+  
+  
+  .allover a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 10px;
+  }
+  .construction-company{
+    padding-top: 100px;
+  }
+  .construction-company h1{
+    margin-bottom: 1rem;
+    font-size: 30px;
+  }
+  .construction-company h2{
+    font-size: 16px;
+    margin-bottom: 1rem;
+  }
+  
+  
+   /* section 2 */
+  
+       .toggle{
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+      }
+  
+      .servicing{
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 1rem;
+        padding: 1rem;
+      }
+      .servicing-left h1{
+        font-size: 20px;
+        margin-bottom: 1rem;
+      }
+      .servicing-left button{
+        text-align: center;
+      }
+  
+        /* Interior design styles */
+  
+    /* section 1 */
+  
+    .interior-company{
+      padding-top: 100px;
+    }
+    .interior-company h1{
+      font-size: 30px;
+      margin-bottom: 1rem;
+    }
+    .interior-company span{
+      font-size: 35px;
+  
+    }
+    .interior-company h2{
+      font-size: 14px;
+    }
+    .servicing-lefts button{
+      text-align: center;
+    }
+    .servicing-rights{
+      margin-left: 2rem;
+      margin-top: 2rem;
+      height: 50vh;
+    }
+    .servicing-lefts h1{
+      font-size: 20px;
+    }
+    .servicing-lefts span{
+      font-size: 18px;
+      margin-bottom: 1rem;
+    }
+    .servicing-lefts p{
+      font-size: 14px;
+   
+    }
+    .servicing-lefts h5{
+      font-size: 16px;
+    }
+  
+         /* Real Estate styles */
+  
+    /* section 1 */
+  
+    .estate-company{
+      padding-top: 100px;
+      width: 100%;
+    }
+    .estate-company h1{
+      font-size: 30px;
+      margin-bottom: 1rem;
+    }
+    .estate-company span{
+      font-size: 30px;
+  
+    }
+    .estate-company h2{
+      font-size: 11px;
+      line-height: 30px;
+    }
+    .servicing-righting{
+      height: 50vh;
+      margin-left: 2rem;
+      margin-top: 2rem;
+      
+    }
+  
+  .thumbnail{
+      gap: 5px;
+      width: 100%;
+      height: 40vh;
+      bottom: -40px;
+
+    }
+  .slider .list .item .content h2 {
+    font-size: 35px;
+    margin: 1rem 0;
+  }
+  .arrows { 
+    top: 20%;
+  }
+  .thumbnail .item {
+    width: 50px;
+    height: 150px;
+    margin-left: 10px;
+  }
+  .slider {
+    height: 90vh;
+    position: relative;
+  }
+  .button{
+    margin-left: 10px;
+     
+  }
+  .input input{
+    width: 60%;
+}
+.input{
+  width: 80%;
+ 
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1023px) {
+  /* section1*/
+
+  .company{
+    height: 70vh;
+  }
+  .div-right li{
+    margin-right: 1rem;
+    list-style: none;
+    position: relative;
+  }
+  .slider .list .item .content {
+     top: 5%;
+  
+  }
+  .company{
+    height: 95vh;
+    margin-bottom: 1rem;
+  }
+
+
+  /* section2 */
+
+  .contain{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px 0 1rem 0;
+  }
+  .containers{
+    height: 70vh;
+    width: 100%;
+  }
+
+   /* section3 */
+
+   #section3{
+    padding: 1rem;
+    height: auto;
+  }
+  .arounds{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 1rem;
+  }
+  .division5{
+    height: 35vh;
+  }
+  .division6{
+    height: 35vh;
+  }
+  .division7{
+    height: 35vh;
+  }
+  .division8{
+    height: 35vh;
+  }
+
+   /* section4 */
+
+   #section4{
+    padding: 0.5rem;
+  }
+  .testimonials{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 3rem;
+  }
+  .listing h2{
+    font-size: 10px;
+    line-height: 25px;
+  }
+  .thumbnail{
+    gap: 5px;
+    width: 100%;
+    height: 40vh;
+    bottom: -40px;
+
+  }
+   /* section5 */
+
+   #section5{
+    padding: 1rem 1rem 2rem 1rem;
+  
+  }
+  .website{
+   display: grid; 
+   grid-template-columns: 1fr 1fr;
+
+  }
+
+.website-left h1{
+  margin-bottom: 1rem;
+  font-size: 30px;
+  text-align: center;
+}
+.website-left p{
+  font-size: 12px;
+  line-height: 25px;
+}
+.website-right{
+  height: 80vh;
+  opacity: 0.7;
+
+}
+.footer{
+  display: grid; 
+  grid-template-columns: 1fr 1fr;
+}
+
+/* Marketing resposnsive design */
+
+  /* section 2 */
+
+  .all p{
+    font-size: 12px;
+    }
+
+    /* section 3 */
+
+    .objectives-right h1{
+      font-size: 25px;
+      white-space: nowrap;
+    }
+    .objectives-left{
+      height: 70vh;
+      width: 100%;
+    }
+    .objectives-right p{
+      font-size: 12px;
+      letter-spacing: 1px;
+      margin-top: 1rem;
+    }
+
+     /* section 3 */
+
+    .grid-left p{
+      font-size: 12px;
+    
+    }
+    .grid-left h2{
+      font-size: 20px
+    }
+    .marketing h1{
+      font-size: 25px;
+      letter-spacing: 1px;
+      font-family: roboto;
+      color: rgb(40, 40, 114);
+      margin-bottom: 2rem;
+      white-space: nowrap;
+    }
+}
+
+@media only screen and (min-width: 1024px)  and (max-width: 1200px){
+  /* section1 */
+
+  .company{
+    height: 60vh;
+  }
+
+  /* section2 */
+  .contain{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px 0 1rem 0;
+  }
+  .containers{
+    height: 50vh;
+    width: 100%;
+  }
+  /* section3 */
+
+  #section3{
+    padding: 1rem;
+    height: auto;
+  }
+  .arounds{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 1rem;
+  }
+  .division5{
+    height: 35vh;
+  }
+  .division6{
+    height: 35vh;
+  }
+  .division7{
+    height: 35vh;
+  }
+  .division8{
+    height: 35vh;
+  }
+  .website-left p{
+    font-size: 15px;
+    line-height: 25px;
+  }
+  .website-right{
+    height: 60vh;
+    opacity: 0.7;
+  
+  }
+}
